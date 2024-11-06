@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    background-image: linear-gradient(to right  ,black 16% , yellow); ;
+}
+
+header {
+    background-image: linear-gradient(to right ,black 16% , yellow);
+    color: rgb(255, 255, 255);
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 5px 233px 823px rgb(0, 0, 0);
+}
+
+header .logo h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    font-size: 1.1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #000000;
+}
+
+.hero {
+    background-image: url(https://nxboats.com.br/wp-content/uploads/2023/11/Lamborghini.jpg);
+    color: #fff;
+    height: 40rem;
+    display: flex;
+    padding: 10px 10px;
+    text-align: center;
+    border-bottom: 1px solid #000000;
+    image-resolution: 1900px 100px;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.carros-lista {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.carros-lista h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #000000;
+}
+
+.carros {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.carro {
+    background-color: #ffffff;
+    box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.carro:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.carro img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.carro img:hover {
+    transform: scale(1.05);
+}
+
+.carro h3 {
+    font-size: 1.5rem;
+    margin: 20px 0;
+    color: #000000;
+}
+
+.carro p {
+    font-size: 1.2rem;
+    color: #ff1900;
+    margin-bottom: 20px;
+}
+
+.carro a {
+    display: inline-block;
+    background-color: #1a8300;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.carro a:hover {
+    background-color: #000000;
+}
+
+.contato {
+    background-color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+    border-top: 3px solid #000000;
+}
+
+.contato h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #000000;
+}
+
+.contato form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contato input,
+.contato textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.contato input:focus,
+.contato textarea:focus {
+    border-color: #000000;
+    outline: none;
+}
+
+.contato button {
+    padding: 15px 30px;
+    background-color: #108b00;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contato button:hover {
+    background-color: #000000;
+}
+
+.comprar {
+    background-color: #f7f7f7;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.comprar h2 {
+    font-size: 2.5rem;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 15px 20px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+footer a {
+    color: #000000;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .carros {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .carro {
+        width: 80%;
+        margin-bottom: 30px;
+    }
+
+    .hero h2 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+        max-width: 100%;
+    }
+}
